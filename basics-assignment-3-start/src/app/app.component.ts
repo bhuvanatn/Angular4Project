@@ -14,7 +14,8 @@ export class AppComponent {
   buttonclicklog = [];
   updateButtonclick() {
     this.ptoggle = !this.ptoggle;
-    this.buttonclicklog.push(this.buttonclicklog.length + 1);
+    // this.buttonclicklog.push(this.buttonclicklog.length + 1);
+    this.buttonclicklog.push(new Date());
   }
 }
 

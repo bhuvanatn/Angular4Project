@@ -13,9 +13,9 @@
       <button class="btn btn-primary" (click)="updateButtonclick()">Display Details</button>
       <p *ngIf="ptoggle">I am smart</p>
       <div 
-       *ngFor="let logItem of buttonclicklog" 
-       [ngStyle]="{backgroundColor: logItem >= 5 ? 'blue' : 'transperant'}"
-       [ngClass]="{'after-five': logItem >= 5}">{{logItem}}</div>
+       *ngFor="let logItem of buttonclicklog; let i = index" 
+       [ngStyle]="{backgroundColor: i > 5 ? 'blue' : 'transperant'}"
+       [ngClass]="{'after-five': i > 5}">{{logItem}}</div>
     </div>
   </div>
 </div>

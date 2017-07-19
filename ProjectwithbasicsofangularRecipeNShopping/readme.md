@@ -1,0 +1,1 @@
+This application shows the basics of angular.
